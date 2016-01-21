@@ -18,7 +18,7 @@ exports.config = {
     from: "ecfago@gmail.com",
     auth: {
       user: "ecfago@gmail.com",
-      pass: "12345"
+      pass: ""
     }
   }
 };
@@ -26,7 +26,7 @@ exports.config = {
 
 //mongodb settings for mongolab START
 //如果使用 MongoLab 提供的 MongoDB 服务，请保留这个配置，否则，删除下面这一行
-exports.database = mongoskin.db(process.env.MONGOLAB_URI || "mongodb://smartcloud:gkUtLYeP0OVxeWMpkHOnS7EkE1qk.I9_rtPiV08GcRE-@ds058508.mongolab.com:58508/smartcloud ");//数据库连接串
+exports.database = mongoskin.db(process.env.MONGOLAB_URI || "mongodb://localhost/canku");//数据库连接串
 //mongodb settings for mongolab END
 
 //mongodb settings for appfog mongodb service START
